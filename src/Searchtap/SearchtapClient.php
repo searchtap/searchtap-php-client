@@ -2,22 +2,21 @@
 
 namespace Searchtap;
 
-class SearchtapClient
+class SearchTapClient
 {
     private $collectionName;
     private $adminKey;
     private $searchKey;
     private $cert_path;
 
-    public function __construct($collectionName, $adminKey, $searchKey)
+    public function __construct($collectionName, $adminKey)
     {
         $this->collectionName = $collectionName;
         $this->adminKey = $adminKey;
-        $this->searchKey = $searchKey;
         $this->cert_path = realpath(dirname(__FILE__).'/../../gs_cert/searchtap.io.crt');
     }
 
-    public function addObjects($productArray)
+    public function index($productArray)
     {
         $product_json = json_encode($productArray);
 
@@ -47,7 +46,7 @@ class SearchtapClient
         curl_close($curl);
     }
 
-    public function removeObjects($productIds)
+    public function remove($productIds)
     {
         $curl = curl_init();
 
@@ -76,5 +75,4 @@ class SearchtapClient
         $err = curl_error($curl);
         curl_close($curl);
     }
-
 }

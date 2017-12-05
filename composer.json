@@ -1,5 +1,5 @@
 {
-    "name": "searchtap/searchtap-client-php",
+    "name": "searchtap/searchtap-php-client",
     "description": "Searchtap API",
     "type": "library",
     "authors": [
