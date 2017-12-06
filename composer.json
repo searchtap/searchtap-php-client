@@ -4,6 +4,7 @@
     "type": "library",
     "homepage": "https://www.searchtap.io/",
     "keywords": ["search"],
+    "license": "MIT",
     "authors": [
         {
             "name": "searchtap.io",
