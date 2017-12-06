@@ -2,12 +2,18 @@
     "name": "searchtap/searchtap-php-client",
     "description": "Searchtap API",
     "type": "library",
+    "homepage": "https://www.searchtap.io/",
+    "keywords": ["search"],
     "authors": [
         {
             "name": "searchtap.io",
             "email": "support@searchtap.io"
         }
     ],
+    "support": {
+        "issues": "https://github.com/searchtap/searchtap-php-client/issues",
+        "source": "https://github.com/searchtap/searchtap-php-client"
+    },
     "require": {
 	"php": ">=5.3.0"
     },
